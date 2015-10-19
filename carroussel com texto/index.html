@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Carousel Skeleton - jCarousel Examples</title>
+		<!-- Docs http://sorgalla.com/jcarousel/docs/reference/ -->
+        <!-- Example assets -->
+        <link rel="stylesheet" type="text/css" href="jcarousel.skeleton.css">
+        <script type="text/javascript" src="libs/jquery/jquery.js"></script>
+        <script type="text/javascript" src="jquery.jcarousel.min.js"></script>
+        <script type="text/javascript" src="jcarousel.skeleton.js"></script>
+		<style type="text/css">
+			.jcarousel-wrapper{width: 1100px;margin:auto}
+			.jcarousel{width:960px;width:960px;margin:auto; }
+			.jcarousel li{width:320px;}
+			.jcarousel li img{width:300px;margin:auto}
+			.jcarousel li h1{margin:5px 0; padding:0;width:100%}
+			.jcarousel li p{display:inline; text-align:left}	
+			.jcarousel div.mask{opacity: 0.40;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=40)"; filter:alpha(opacity=40); background:red;width:300px;height:200px;margin-top:-204px;}			
+			.jcarousel-control-prev,.jcarousel-control-next{margin-top: -220px; text-decoration:none}
+			.jcarousel-control-prev{float: left}
+			.jcarousel-control-next{float:right}
+		</style>
+		<script type="text/javascript">
+			//Mascara
+			$(document).ready(function(){
+				$(".jcarousel li")
+				.mouseover(function(){
+					$("div.mask", this).stop().fadeTo("slow", 0.0);//esconde a mascara
+				})
+				.mouseout(function(){
+					$("div.mask", this).stop().fadeTo("slow", 0.4);//ao sair com o mouse, mostra a mascara com transparencia 0.40%
+				})
+			});
+			
+			
+		</script>
+
+    </head>
+    <body>
+		
+        <div class="wrapper">
+            <!--
+            Mutual wrapper, encloses the carousel and the plugin elements to
+            enable auto-detection of the carousel for the plugins.
+            -->
+            <div class="jcarousel-wrapper">
+
+                <!-- Carousel -->
+                <div class="jcarousel">
+                    <ul>
+                        <li>							
+							<img src="_shared/img/img1.jpg" alt="">
+							<div class="mask"></div>
+							<h1>Lorem Ipsum</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus molestie commodo tempor. Morbi nec imperdiet purus, nec faucibus est.</p>
+						</li>
+                        <li>
+							<img src="_shared/img/img2.jpg" alt="">
+							<div class="mask"></div>
+							<h1>Lorem Ipsum</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus molestie commodo tempor. Morbi nec imperdiet purus, nec faucibus est.</p>
+						</li>
+                        <li>
+							<img src="_shared/img/img3.jpg" alt="">
+							<div class="mask"></div>
+							<h1>Lorem Ipsum</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus molestie commodo tempor. Morbi nec imperdiet purus, nec faucibus est.</p>
+						</li>
+                        <li>
+							<img src="_shared/img/img4.jpg" alt="">
+							<div class="mask"></div>
+							<h1>Lorem Ipsum</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus molestie commodo tempor. Morbi nec imperdiet purus, nec faucibus est.</p>
+						</li>
+                        <li>
+							<img src="_shared/img/img5.jpg" alt="">
+							<div class="mask"></div>
+							<h1>Lorem Ipsum</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus molestie commodo tempor. Morbi nec imperdiet purus, nec faucibus est.</p>
+						</li>
+                        <li>
+							<img src="_shared/img/img6.jpg" alt="">
+							<div class="mask"></div>
+							<h1>Lorem Ipsum</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus molestie commodo tempor. Morbi nec imperdiet purus, nec faucibus est.</p>
+						</li>
+                    </ul>
+                </div>
+
+                <!-- Prev/next controls -->
+                <a href="#" class="jcarousel-control-prev"><img src="left.png"/></a>
+                <a href="#" class="jcarousel-control-next"><img src="right.png"/></a>
+
+                <!-- Pagination (Descomentar se for utilizar paginaçã) -->
+              <!--  <p class="jcarousel-pagination">
+                    <!-- Pagination items will be generated in here -->
+                <!--</p>-->
+
+            </div>
+
+        </div>
+
+    </body>
+</html>
