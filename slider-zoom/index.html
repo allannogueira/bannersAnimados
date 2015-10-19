@@ -1,0 +1,61 @@
+<html>
+	<head>
+		<style>
+			.produtosZoom {
+				display:block;
+			}
+
+			.produto {
+				font-family: Helvetica Neue;
+				float:left;
+				/*width:50px;
+				height:50px;*/
+				overflow:hidden;
+				cursor: pointer;
+				text-align:center;
+				margin-right: 10px;
+				padding-top: 45px;
+				font-size: 8pt
+			}
+			
+			.produto:last-child {margin-right: 0px}
+
+			.produto img,.produto span {
+				-moz-transition: all 0.2s ease;
+				-webkit-transition: all 0.2s ease;
+				-o-transition: all 0.2s ease;
+				transition: all 0.2s ease;   
+				
+				width:50px;
+				height:50px;
+			}
+
+			.produto.zoom:hover img{
+				width:100px;
+				height:100px;
+				margin-top: -50px;
+			}
+			
+			.produto.zoom:hover span{
+				font-size: 150%;
+				font-weight: bold;
+			}
+		</style>
+	</head>
+	<body>
+	<div class="produtosZoom">
+		<div class="produto zoom"><img src="1.jpg" /><br/><span>Corte</span></div>
+		<div class="produto zoom"><img src="2.jpg" /><br/><span>Esmerilhadeira</span></div>
+		<div class="produto zoom"><img src="3.jpg" /><br/><span>File Belt</span></div>
+		<div class="produto zoom"><img src="4.jpg" /><br/><span>Inline</span></div>
+		<div class="produto zoom"><img src="5.jpg" /><br/><span>Lixadeira de Ponto</span></div>
+		<div class="produto zoom"><img src="6.jpg" /><br/><span>Mini Orbital</span></div>
+		<div class="produto zoom"><img src="7.jpg" /><br/><span>Orbitais</span></div>
+		<div class="produto zoom"><img src="8.jpg" /><br/><span>Politriz</span></div>
+		<div class="produto zoom"><img src="9.jpg" /><br/><span>Retifica</span></div>
+		<div class="produto zoom"><img src="10.jpg" /><br/><span>Roloc</span></div>
+		<div class="produto zoom"><img src="11.jpg" /><br/><span>Treme-treme</span></div>
+	</div>
+
+	</body>	
+</html>
